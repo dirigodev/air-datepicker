@@ -1095,9 +1095,10 @@
             if (this.opts.range) {
                 if (!this.opts.toggleSelected) {
                     // Add possibility to select same date when range is true
-                    if (this.selectedDates.length != 2) {
+                    /*if (this.selectedDates.length != 2) {
                         this._trigger('clickCell', selectedDate);
-                    }
+                    }*/
+                    this._trigger('clickCell', selectedDate);
                 } else {
                     this.removeDate(selectedDate);
                 }
